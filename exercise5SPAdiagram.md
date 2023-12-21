@@ -1,5 +1,5 @@
-```mermaid
-%% Almost the same as exercise 4 considering no notes are added. Only difference are the links. 
+```mermaid 
+
 sequenceDiagram
     participant browser
     participant server
