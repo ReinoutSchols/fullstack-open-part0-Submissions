@@ -4,9 +4,9 @@ sequenceDiagram
     participant browser
     participant server
 
-    browser->>server: POST https://studies.cs.helsinki.fi/exampleapp/new_note data: { content: "test" }
+    browser->>server: POST https://studies.cs.helsinki.fi/exampleapp/new_note data
     activate server
-    note right of server: server creates new note object <br>and adds it to array notes
+    note right of server: server creates new note object <br>and adds it to array notes { content: "test" }
     server-->>browser: server asks browser to do a new GET request and reload the page
     deactivate server
 
